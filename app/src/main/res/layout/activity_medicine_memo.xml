@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lsh2017.dontgetsick.MedicineMemoActivity"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+       <com.lsh2017.dontgetsick.CameraPreview
+           android:id="@+id/camerapreview"
+           android:layout_width="match_parent"
+           android:layout_height="230dp" />
+
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#81C784"
+            android:textColor="#ffffff"
+            android:text="촬영"/>
+        <Button
+            android:id="@+id/btn_rephoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:backgroundTint="#81C784"
+            android:text="재촬영"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edit_memo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="input memo"
+            android:background="#B9F6CA"
+            android:gravity="top"
+            android:inputType="text"/>
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="저장"
+            android:textColor="#ffffff"
+            android:background="#81C784"
+            android:layout_alignParentRight="true"
+            android:onClick="clickBtn"
+            android:layout_marginTop="16dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

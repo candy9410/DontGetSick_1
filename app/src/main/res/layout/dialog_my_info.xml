@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFB74D">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="내 정보"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  이름 : "
+            android:textSize="24sp"
+            />
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="text"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="  나이 : "
+            />
+        <EditText
+            android:id="@+id/edit_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="세"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="몸무게 : "
+            />
+        <EditText
+            android:id="@+id/edit_weight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="kg"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:text="   키 : "
+            />
+        <EditText
+            android:id="@+id/edit_height"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="3"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cm"
+            android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_save"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="저장"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:id="@+id/btn_cancel"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="취소"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_toLeftOf="@id/btn_save"-->
+
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+</LinearLayout>
